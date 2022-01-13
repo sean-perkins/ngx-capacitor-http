@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-capacitor-http": {
+      "projectType": "library",
+      "root": "projects/ngx-capacitor-http",
+      "sourceRoot": "projects/ngx-capacitor-http/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-capacitor-http/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-capacitor-http/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-capacitor-http/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-capacitor-http/src/test.ts",
+            "tsConfig": "projects/ngx-capacitor-http/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-capacitor-http/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-capacitor-http"
+}
