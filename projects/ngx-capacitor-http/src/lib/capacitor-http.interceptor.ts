@@ -50,7 +50,7 @@ export class CapacitorHttpInterceptor implements HttpInterceptor {
     return defer(() => Http.request({
       url,
       method,
-      data: body || {},
+      data: body || method === 'GET' ? undefined : {},
       headers: {
         ...sanitizeHeaders(headers),
         Accept: 'application/json',
