@@ -41,4 +41,4 @@ export class AppModule {}
 
 Using Angular interceptors, at the time of request we validate which runtime the code is executing in. If the runtime is Capacitor, we forward the request data through `@capacitor-community/http` and to the native device layer to perform the request in the background of the WebView application. If the runtime is any other target, such as in a web browser, the request is unmodified and passed to the stock Angular implementation for http requests.
 
-![Diagram](../../.github/NgxCapacitorHttp.png)
+![Diagram](https://github.com/sean-perkins/ngx-capacitor-http/blob/main/.github/NgxCapacitorHttp.png)
