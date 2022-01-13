@@ -2,7 +2,7 @@
 
 This plugin enables developers to use the Angular Http API for building their applications, while benefiting from performant native http calls using [`@capacitor-community/http`](https://github.com/capacitor-community/http) when running in the Capacitor runtime.
 
-This allows developers to use mechanisms such as Angular interceptors to modify outgoing requests without writing platform specific code.
+This allows developers to use mechanisms such as Angular interceptors and proxies to modify outgoing requests without writing platform specific code.
 
 ### Installation
 
