@@ -1,10 +1,10 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { HttpErrorResponse, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpParams, HttpRequest, HttpResponse } from '@angular/common/http';
 
 import { Http, HttpParams as CapacitorHttpParams, HttpHeaders as CapacitorHttpHeaders } from '@capacitor-community/http';
-
 import { Platform } from '@ionic/angular';
-import { catchError, defer, map, Observable, throwError } from "rxjs";
+
+import { catchError, defer, map, Observable, throwError } from 'rxjs';
 
 @Injectable()
 export class CapacitorHttpInterceptor implements HttpInterceptor {

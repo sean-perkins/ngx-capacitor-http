@@ -31,9 +31,21 @@
             "tsConfig": "projects/ngx-capacitor-http/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-capacitor-http/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-capacitor-http/**/*.ts",
+              "projects/ngx-capacitor-http/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "ngx-capacitor-http"
+  "defaultProject": "ngx-capacitor-http",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
