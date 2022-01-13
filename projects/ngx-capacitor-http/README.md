@@ -37,8 +37,10 @@ import { CapacitorHttpProvider } from 'ngx-capacitor-http';
 export class AppModule {}
 ```
 
+> Note: This library currently only supports HTTP methods. It does not currently handle the Capacitor implementation for download and upload. You will want to manually import the library API in your project for those usages.
+
 ### How it works
 
 Using Angular interceptors, at the time of request we validate which runtime the code is executing in. If the runtime is Capacitor, we forward the request data through `@capacitor-community/http` and to the native device layer to perform the request in the background of the WebView application. If the runtime is any other target, such as in a web browser, the request is unmodified and passed to the stock Angular implementation for http requests.
 
-![Diagram](https://github.com/sean-perkins/ngx-capacitor-http/blob/main/.github/NgxCapacitorHttp.png)
+![Diagram](https://github.com/sean-perkins/ngx-capacitor-http/blob/main/.github/NgxCapacitorHttp.png?raw=true)
