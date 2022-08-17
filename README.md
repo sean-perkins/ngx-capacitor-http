@@ -1,5 +1,12 @@
 # NgxCapacitorHttp
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/ngx-capacitor-http"><img src="https://img.shields.io/npm/l/ngx-capacitor-http?style=flat-square" /></a>
+<br>
+  <a href="https://www.npmjs.com/package/ngx-capacitor-http"><img src="https://img.shields.io/npm/dw/ngx-capacitor-http?style=flat-square" /></a>
+  <a href="https://www.npmjs.com/package/ngx-capacitor-http"><img src="https://img.shields.io/npm/v/ngx-capacitor-http?style=flat-square" /></a>
+</p>
+
 This plugin enables developers to use the Angular Http API for building their applications, while benefiting from performant native http calls using [`@capacitor-community/http`](https://github.com/capacitor-community/http) when running in the Capacitor runtime.
 
 This allows developers to use mechanisms such as Angular interceptors and proxies to modify outgoing requests without writing platform specific code.

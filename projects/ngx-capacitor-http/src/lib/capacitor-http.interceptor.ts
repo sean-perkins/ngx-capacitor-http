@@ -4,7 +4,8 @@ import { HttpErrorResponse, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor
 import { Http, HttpParams as CapacitorHttpParams, HttpHeaders as CapacitorHttpHeaders } from '@capacitor-community/http';
 import { Platform } from '@ionic/angular';
 
-import { catchError, defer, map, Observable, throwError } from 'rxjs';
+import { defer, Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable()
 export class CapacitorHttpInterceptor implements HttpInterceptor {
