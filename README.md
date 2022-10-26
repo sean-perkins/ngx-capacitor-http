@@ -11,7 +11,7 @@ This plugin enables developers to use the Angular Http API for building their ap
 
 This allows developers to use mechanisms such as Angular interceptors and proxies to modify outgoing requests without writing platform specific code.
 
-> ⚠️ Capacitor 4.2 introduces Native HTTP support. Projects on `@capacitor/core@4.2` and later do not need to use this Angular plugin.
+> ⚠️ Capacitor 4.3 introduces Native HTTP support. Projects on `@capacitor/core@4.3` and later do not need to use this Angular plugin.
 
 ### Installation
 
