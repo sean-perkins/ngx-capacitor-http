@@ -30,7 +30,7 @@ export class CapacitorHttpInterceptor implements HttpInterceptor {
     const sanitizeHeaders = (headers: HttpHeaders) => {
       const res: CapacitorHttpHeaders = {};
       for (const key of headers.keys()) {
-        res[key] = decodeURIComponent(params.get(key) || '');
+        res[key] = decodeURIComponent(headers.get(key) || '');
       }
       return res;
     }
